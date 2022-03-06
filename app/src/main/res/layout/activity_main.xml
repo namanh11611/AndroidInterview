@@ -10,8 +10,8 @@
         android:id="@+id/bt_start_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
-        app:layout_constraintEnd_toStartOf="@id/bt_stop_service"
+        android:text="Start foreground service"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,10 +19,18 @@
         android:id="@+id/bt_stop_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop"
-        app:layout_constraintBottom_toBottomOf="@id/bt_start_service"
+        android:text="Stop foreground service"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/bt_start_service"
-        app:layout_constraintTop_toTopOf="@id/bt_start_service" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_start_service" />
+
+    <Button
+        android:id="@+id/bt_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random bound service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_stop_service" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
